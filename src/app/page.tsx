@@ -1,69 +1,58 @@
-import Link from "next/link";
+"use client";
 
-import { LatestPost } from "@/app/_components/post";
-import { auth } from "@/server/auth";
-import { api, HydrateClient } from "@/trpc/server";
+import React from "react";
 
-export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-  const session = await auth();
-
-  if (session?.user) {
-    void api.post.getLatest.prefetch();
-  }
-
+export default function Page() {
   return (
-    <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-          </h1>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">First Steps →</h3>
-              <div className="text-lg">
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
-            </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Documentation →</h3>
-              <div className="text-lg">
-                Learn more about Create T3 App, the libraries it uses, and how
-                to deploy it.
-              </div>
-            </Link>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
-              {hello ? hello.greeting : "Loading tRPC query..."}
-            </p>
+    <div>
+      <header className="bg-gray-100 py-4">
+        <nav className="flex justify-center gap-6">
+          <a href="#" className="text-blue-600 hover:underline">Início</a>
+          <a href="#" className="text-blue-600 hover:underline">Serviços</a>
+          <a href="#" className="text-blue-600 hover:underline">Sobre</a>
+        </nav>
+      </header>
 
-            <div className="flex flex-col items-center justify-center gap-4">
-              <p className="text-center text-2xl text-white">
-                {session && <span>Logged in as {session.user?.name}</span>}
-              </p>
-              <Link
-                href={session ? "/api/auth/signout" : "/api/auth/signin"}
-                className="rounded-full bg-white/10 px-10 py-3 font-semibold no-underline transition hover:bg-white/20"
+      <main className="p-6">
+        <section>
+          <h1 className="text-2xl font-bold mb-4">Agendamento</h1>
+
+          <section className="agendamento">
+            <form className="flex flex-col gap-4 max-w-sm">
+              <div className="flex flex-col">
+                <label htmlFor="nome">Nome:</label>
+                <input type="text" id="nome" className="border rounded p-2" />
+              </div>
+
+              <div className="flex flex-col">
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" className="border rounded p-2" />
+              </div>
+
+              <div className="flex flex-col">
+                <label htmlFor="check_in">Check-in:</label>
+                <input type="date" id="check_in" className="border rounded p-2" />
+              </div>
+
+              <div className="flex flex-col">
+                <label htmlFor="check_out">Check-out:</label>
+                <input type="date" id="check_out" className="border rounded p-2" />
+              </div>
+
+              <button
+                type="submit"
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
               >
-                {session ? "Sign out" : "Sign in"}
-              </Link>
-            </div>
-          </div>
-
-          {session?.user && <LatestPost />}
-        </div>
+                Enviar
+              </button>
+            </form>
+          </section>
+        </section>
       </main>
-    </HydrateClient>
+
+      <footer className="bg-gray-100 text-center py-4 mt-6">
+        <p>Todos os direitos reservados</p>
+      </footer>
+    </div>
   );
 }
