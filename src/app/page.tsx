@@ -5,9 +5,10 @@ import React from "react";
 export default function Page() {
   return (
     <main>
-      <section className="min-h-screen flex items-center justify-center text-white">
-        <form className="flex flex-col gap-4 max-w-sm w-full bg-gray-900 p-8 rounded-lg shadow-lg">
-          <div className="flex flex-col">
+      <section className="min-h-screen flex flex-col gap-6 items-center justify-center text-white">
+        <h1 className="font-bold text-lg text-black ">Agendamento</h1>
+        <form className="max-w-sm w-full bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="flex flex-col mb-4">
             <label htmlFor="nome" className="mb-1">
               Nome:
             </label>
@@ -18,7 +19,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col my-4">
             <label htmlFor="email" className="mb-1">
               Email:
             </label>
@@ -29,7 +30,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col my-4">
             <label htmlFor="check_in" className="mb-1">
               Check-in:
             </label>
@@ -40,7 +41,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-4 mb-8">
             <label htmlFor="check_out" className="mb-1">
               Check-out:
             </label>
