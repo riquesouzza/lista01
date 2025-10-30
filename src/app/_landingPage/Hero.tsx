@@ -19,10 +19,10 @@ export default function Hero(){
 
             <p className="font-['Montserrat'] font-bold text-white
                         text-[10px] sm:text-[15px] lg:text-[20px]">
-            Experiências extremas de sobrevivência urbana
+            Aqui você, raptor, está protegido, mas não o seu refém!
             </p>
 
-            <Botao label="ALUGAR"/>
+            <Botao label="Reservar"/>
    
        </section>
     )

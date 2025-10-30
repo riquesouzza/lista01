@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import Nav from "@/app/herosection/Nav";
+import Nav from "@/app/_components/Nav";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -8,7 +8,7 @@ import { TRPCReactProvider } from "@/trpc/react";
 
 export const metadata: Metadata = {
   title: "Locking",
-  description: "Uma experiência de sobrevivência urbana",
+  description: "Uma desexperiência para o hóspede",
   icons: [{ rel: "icon", url: "/logo.svg" }],
 };
 

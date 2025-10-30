@@ -1,7 +1,7 @@
-import Agendamento from "@/app/_landingPage/agendamento";
-import Sobre from "@/app/Sobre/Sobre";
-import Nav from "@/app/herosection/Nav";
-import Hero from "@/app/herosection/Hero";
+import Agendamento from "@/app/_landingpage/agendamento";
+import Sobre from "@/app/_landingpage/Sobre";
+import Nav from "@/app/_components/Nav";
+import Hero from "@/app/_landingpage/Hero";
 
 export default function HomePage() {
   return (

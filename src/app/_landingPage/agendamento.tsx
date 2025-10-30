@@ -9,7 +9,7 @@ export default function Agendamento() {
                  overflow-x-hidden">
       <h1 className="w-full max-w-xl font-extrabold text-black
                      text-3xl pb-5 sm:text-4xl md:text-5xl lg:text-6xl text-left">
-        Agendamento
+        Solicitação de serviços
       </h1>
 
       <form
@@ -19,7 +19,7 @@ export default function Agendamento() {
 
         <div className="flex flex-col">
           <label htmlFor="nome" className="font-medium pb-1">
-            Nome:
+            Codinome:
           </label>
           <input
             type="text"
@@ -31,7 +31,7 @@ export default function Agendamento() {
 
         <div className="flex flex-col">
           <label htmlFor="email" className="font-medium pb-1">
-            Email:
+            Email(descartável):
           </label>
           <input
             type="email"
@@ -46,7 +46,7 @@ export default function Agendamento() {
             htmlFor="check_in"
             className="font-medium pb-1 flex items-center gap-2"
           >
-            <span>📅</span> Data de check-in:
+            <span>📅</span> Data de entrada:
           </label>
           <input
             type="date"
@@ -59,7 +59,7 @@ export default function Agendamento() {
           <label
             htmlFor="check_out"
             className="font-medium pb-1 flex items-center gap-2">
-            <span>📅</span> Data de check-out:
+            <span>📅</span> Data de saída(não obrigatória):
           </label>
           <input
             type="date"

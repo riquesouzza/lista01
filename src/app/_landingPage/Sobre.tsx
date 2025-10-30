@@ -2,6 +2,11 @@
 
 import React from "react";
 
+/*Na Locking, acreditamos que o verdadeiro luxo está na completa ausência de conforto. 
+                    Nossos imóveis são cuidadosamente escolhidos para oferecer experiências 
+                    únicas: piso instável para treinar equilíbrio, telhados que pingam estrategicamente e 
+                    banheiros opcionais — porque é bom fugir da rotina.*/
+
 export default function Sobre(){
 
     return(
@@ -18,10 +23,10 @@ export default function Sobre(){
     
                 <p className="font-['Montserrat'] font-medium text-black text-left pt-10
                               text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] indent-9">
-                    Na Locking, acreditamos que o verdadeiro luxo está na completa ausência de conforto. 
-                    Nossos imóveis são cuidadosamente escolhidos para oferecer experiências 
+                    Na locking, todos as suas informações estão seguras oferecemos desde o transporte até o "armazenamento da encomenda". Nossas acomodações 
+                    são cuidadosamente escolhidos para oferecer experiências 
                     únicas: piso instável para treinar equilíbrio, telhados que pingam estrategicamente e 
-                    banheiros opcionais — porque é bom fugir da rotina.
+                    banheiros opcionais, tudo para oferecer para você, o melhor para o seu cliente.
                 </p>
 
             </div>

@@ -13,7 +13,7 @@ export default function Nav(){
 
         { url: "#sobre", label: "SOBRE" },
         { url: "#beneficios", label: "BENEFÍCIOS" },
-        { url: "#agendamento", label: "AGENDAMENTO" },
+        { url: "#agendamento", label: "CONTATO" },
 
     ];
 
