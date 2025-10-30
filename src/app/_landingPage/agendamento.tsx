@@ -4,16 +4,17 @@ import React from "react";
 
 export default function Agendamento() {
   return (
-    <section className="flex flex-col items-center my-20">
-      <div className="w-[980px] max-w-full">
-        <h1 className="text-4xl font-fredoka font-extrabold mb-10 text-left">
+    <section className="flex flex-col items-center py-15">
+      <div className="w-4/5 pb-10">
+        <h1 className="font-extrabold text-black text-base md:text-lg lg:text-4xl text-left">
           Agendamento
         </h1>
+      </div>
 
-        <form className="bg-black text-white rounded-[50px] p-10 flex flex-col gap-6 shadow-lg">
+        <form className="bg-black text-white rounded-[45px] p-10 flex flex-col gap-6 shadow-lg w-4/5">
           {/* Nome */}
           <div className="flex flex-col">
-            <label htmlFor="nome" className="font-medium mb-1">
+            <label htmlFor="nome" className="font-medium pb-1">
               Nome:
             </label>
             <input
@@ -25,7 +26,7 @@ export default function Agendamento() {
 
           {/* Email */}
           <div className="flex flex-col">
-            <label htmlFor="email" className="font-medium mb-1">
+            <label htmlFor="email" className="font-medium pb-1">
               Email:
             </label>
             <input
@@ -39,7 +40,7 @@ export default function Agendamento() {
           <div className="flex flex-col">
             <label
               htmlFor="check_in"
-              className="font-medium mb-1 flex items-center gap-2"
+              className="font-medium pb-1 flex items-center gap-2"
             >
               <span>📅</span> Data de check-in:
             </label>
@@ -54,7 +55,7 @@ export default function Agendamento() {
           <div className="flex flex-col">
             <label
               htmlFor="check_out"
-              className="font-medium mb-1 flex items-center gap-2"
+              className="font-medium pb-1 flex items-center gap-2"
             >
               <span>📅</span> Data de check-out:
             </label>
@@ -73,7 +74,6 @@ export default function Agendamento() {
             Enviar
           </button>
         </form>
-      </div>
     </section>
   );
 }

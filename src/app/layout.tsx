@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </nav>
         </header>
         {children}
-        <footer className="bg-gray-800 text-white p-4 mt-8 text-center">
+        <footer className="bg-gray-800 text-white p-4 pt-8 text-center">
           Lista01 - © 2025 - Todos os direitos reservados
         </footer>
       </body>
