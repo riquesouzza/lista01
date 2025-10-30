@@ -5,7 +5,7 @@ import React from "react";
 export default function Sobre(){
 
     return(
-        <section className="bg-white flex flex-col lg:flex-row justify-center items-center
+        <section id="sobre" className="bg-white flex flex-col lg:flex-row justify-center items-center
                             w-full h-auto min-h-screen lg:max-h-screen lg:gap-12
                             p-8 sm:p-8  md:p-16 lg:p-32 py-10">
         

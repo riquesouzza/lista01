@@ -16,7 +16,7 @@ export default function Agendamento() {
         className="bg-black  text-white rounded-[45px] p-10
                    flex flex-col gap-6 shadow-lg
                    w-full ">
-        {/* Campos */}
+
         <div className="flex flex-col">
           <label htmlFor="nome" className="font-medium pb-1">
             Nome:
@@ -52,15 +52,13 @@ export default function Agendamento() {
             type="date"
             id="check_in"
             className="bg-transparent border-b border-gray-500
-                       focus:outline-none focus:border-white py-2"
-          />
+                       focus:outline-none focus:border-white py-2"/>
         </div>
 
         <div className="flex flex-col">
           <label
             htmlFor="check_out"
-            className="font-medium pb-1 flex items-center gap-2"
-          >
+            className="font-medium pb-1 flex items-center gap-2">
             <span>📅</span> Data de check-out:
           </label>
           <input
