@@ -11,8 +11,8 @@ export default function Sobre(){
 
     return(
         <section id="sobre" className="bg-white flex flex-col lg:flex-row justify-center items-center
-                            w-full h-auto min-h-screen lg:max-h-screen lg:gap-12
-                            p-8 sm:p-8  md:p-16 lg:p-32 py-10">
+                            w-full min-h-screen lg:max-h-screen lg:gap-12
+                            p-8 sm:p-8  md:p-16 lg:p-32 pb-10">
         
             <div className="flex flex-col lg:w-1/2 lg:h-[70vh] m-0 p-0">
 
@@ -35,7 +35,6 @@ export default function Sobre(){
                 <img src="imagem/casa.png"
                      className="w-[40vh] lg:w-full"/>
             </div>
-
         </section>
     );
 }

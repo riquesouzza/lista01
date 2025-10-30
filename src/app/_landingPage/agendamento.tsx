@@ -5,7 +5,7 @@ import React from "react";
 export default function Agendamento() {
   return (
     <section id="agendamento" className="bg-white flex flex-col items-start
-                 w-full min-h-screen p-8 sm:p-8 md:p-16 lg:p-32
+                 w-full min-h-screen p-8 sm:pt-8 md:p-16 lg:p-32
                  overflow-x-hidden">
       <h1 className="w-full max-w-xl font-extrabold text-black
                      text-3xl pb-5 sm:text-4xl md:text-5xl lg:text-6xl text-left">

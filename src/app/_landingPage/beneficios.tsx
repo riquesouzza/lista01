@@ -5,7 +5,7 @@ import React from "react";
 export default function Beneficios (){
     return(
         <section id="beneficios" className="bg-white flex flex-col justify-center items-center
-                                            w-full h-auto min-h-screen lg:max-h-screen lg:gap-12
+                                            w-full min-h-screen py-10 lg:max-h-screen lg:gap-12
                                             p-8 sm:p-8  md:p-16 lg:p-32">
 
             <div className="flex w-full justify-start">
