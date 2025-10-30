@@ -1,8 +1,26 @@
 import "@/styles/globals.css";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+import { type Metadata } from "next";
+import { Geist } from "next/font/google";
+
+import { TRPCReactProvider } from "@/trpc/react";
+
+export const metadata: Metadata = {
+  title: "Locking",
+  description: "Uma experiência de sobrevivência urbana",
+  icons: [{ rel: "icon", url: "/logo.svg" }],
+};
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html>
+    <html lang="pt-BR" className={`${geist.variable}`}>
       <body>
         <header>
           <nav className="flex justify-center gap-6 bg-gray-800 text-white py-4">
