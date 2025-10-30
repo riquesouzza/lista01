@@ -1,23 +1,19 @@
-import Link from "next/link";
-
-import { LatestPost } from "@/app/_components/post";
-import { auth } from "@/server/auth";
-import { api, HydrateClient } from "@/trpc/server";
+import Agendamento from "@/app/_landingpage/agendamento";
+import Sobre from "@/app/_landingpage/Sobre";
+import Nav from "@/app/_components/Nav";
+import Hero from "@/app/_landingpage/Hero";
 import Beneficios from "@/_landingpage/beneficios";
 
-export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-  const session = await auth();
-
-  if (session?.user) {
-    void api.post.getLatest.prefetch();
-  }
-
+export default function HomePage() {
   return (
-    <HydrateClient>
+    <>
+    <Nav />
+    <Hero />
       <main>
+        <Sobre />
         <Beneficios />
+        <Agendamento />
       </main>
-    </HydrateClient>
+    </>
   );
 }
