@@ -6,11 +6,11 @@ import Hero from "@/app/herosection/Hero";
 export default function HomePage() {
   return (
     <>
-      <Nav/>
+    <Nav />
+    <Hero />
       <main>
-         <Hero />
         <Sobre />
-       <Agendamento />
+        <Agendamento />
       </main>
     </>
   );

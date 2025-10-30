@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Nav from "@/app/herosection/Nav";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -22,18 +23,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${geist.variable}`}>
       <body>
-        <header>
-          <nav className="flex justify-center gap-6 bg-gray-800 text-white py-4">
-            <a href="#" className="hover:underline">Início</a>
-            <a href="#" className="hover:underline">Serviços</a>
-            <a href="#" className="hover:underline">Agendamento</a>
-            <a href="#" className="hover:underline">Benefícios</a>
-            <a href="#" className="hover:underline">Sobre</a>
-          </nav>
-        </header>
         {children}
-        <footer className="bg-gray-800 text-white p-4 pt-8 text-center">
-          Lista01 - © 2025 - Todos os direitos reservados
+        <footer className="bg-[#0E0E0E] text-white p-4 pt-8 text-center">
+          Todos os direitos reservados - Trainee Struct ©2025 
         </footer>
       </body>
     </html>
