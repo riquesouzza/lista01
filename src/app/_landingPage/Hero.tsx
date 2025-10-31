@@ -7,7 +7,7 @@ export default function Hero(){
     return(
 
        <section className="bg-[#0E0E0E] flex flex-col justify-center items-center text-center
-                           w-full h-[85vh]
+                           w-full h-screen
                            p-8 sm:p-8  md:p-16 lg:p-32">
         
             <h1  style={{ textShadow: "0px 0px 20px rgba(191, 191, 191, 1)" }}

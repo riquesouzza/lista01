@@ -1,8 +1,8 @@
-import Agendamento from "@/app/_landingpage/agendamento";
+import Agendamento from "@/app/_landingPage/agendamento";
 import Sobre from "@/app/_landingPage/Sobre";
 import Nav from "@/app/_components/Nav";
-import Hero from "@/app/_landingpage/Hero";
 import Beneficios from "@/app/_landingPage/beneficios";
+import Hero from "@/app/_landingPage/Hero";
 
 export default function HomePage() {
   return (
@@ -11,9 +11,9 @@ export default function HomePage() {
     <Hero />
       <main>
         <Sobre />
-          <br></br>
-          <br></br>
+        <br></br>
         <Beneficios />
+        <br></br>
         <Agendamento />
       </main>
     </>

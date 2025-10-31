@@ -1,15 +1,16 @@
 "use client";
 
 import React from "react";
-
+/*font-['Fredoka_One'] font-bold text-black
+                               text-[40px] md:text-[60px] lg:text-[80p*/
 export default function Agendamento() {
   return (
     <section id="agendamento" className="bg-white flex flex-col items-start
-                 w-full min-h-screen p-8 sm:pt-8 md:p-16 lg:p-32
+                 w-full p-8 sm:pt-8 md:p-16 lg:px-25
                  overflow-x-hidden">
-      <h1 className="w-full max-w-xl font-extrabold text-black
+      <h1 className="w-full font-['Fredoka_One'] font-bold text-black
                      text-3xl pb-5 sm:text-4xl md:text-5xl lg:text-6xl text-left">
-        Solicitação de serviços
+        Agendamento
       </h1>
 
       <form
@@ -18,7 +19,7 @@ export default function Agendamento() {
                    w-full ">
 
         <div className="flex flex-col">
-          <label htmlFor="nome" className="font-medium pb-1">
+          <label htmlFor="nome" className="text-xl pb-1">
             Codinome:
           </label>
           <input
@@ -30,7 +31,7 @@ export default function Agendamento() {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="email" className="font-medium pb-1">
+          <label htmlFor="email" className="text-xl pb-1">
             Email(descartável):
           </label>
           <input
@@ -44,7 +45,7 @@ export default function Agendamento() {
         <div className="flex flex-col">
           <label
             htmlFor="check_in"
-            className="font-medium pb-1 flex items-center gap-2"
+            className="text-xl pb-1 flex items-center gap-2"
           >
             <span>📅</span> Data de entrada:
           </label>
@@ -58,7 +59,7 @@ export default function Agendamento() {
         <div className="flex flex-col">
           <label
             htmlFor="check_out"
-            className="font-medium pb-1 flex items-center gap-2">
+            className="text-xl pb-1 flex items-center gap-2">
             <span>📅</span> Data de saída(não obrigatória):
           </label>
           <input

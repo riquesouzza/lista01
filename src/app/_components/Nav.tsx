@@ -12,7 +12,7 @@ export default function Nav(){
     const items: Navitem_interface[] = [
 
         { url: "#sobre", label: "SOBRE" },
-        { url: "#beneficios", label: "ACOMODAÇÔES" },
+        { url: "#beneficios", label: "ACOMODAÇÕES" },
         { url: "#agendamento", label: "AGENDAMENTO" },
 
     ];
